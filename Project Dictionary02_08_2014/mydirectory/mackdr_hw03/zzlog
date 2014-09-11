@@ -1,0 +1,6 @@
+Main: Beginning execution
+Main: stoplistfile:  '../../stoplistNLTK.txt'
+Main: infile:  '../../darwin-beagle.txt'
+Main: outfile: 'zzout'
+Main: logfile: 'zzlog'
+Main: Ending execution

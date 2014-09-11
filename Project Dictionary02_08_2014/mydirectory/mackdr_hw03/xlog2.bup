@@ -1,0 +1,6 @@
+Main: Beginning execution
+Main: stoplistfile:  'stoplistNLTK.txt'
+Main: infile:  'xin2.txt'
+Main: outfile: 'xout2'
+Main: logfile: 'xlog2'
+Main: Ending execution

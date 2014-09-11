@@ -1,0 +1,13 @@
+#!/bin/bash
+cd testdirectory
+#
+for item in *
+do
+  echo " "
+  echo "EXECUTING" $item
+  cd $item
+  Aprog ../../stoplistNLTK.txt ../../darwin-beagle.txt zzout zzlog
+  cd ..
+echo "EXECUTION COMPLETE"
+done
+echo " "

@@ -1,0 +1,71 @@
+/******************************************************************************
+Modified by: Domonick R. Mack
+CSCE 240 Spring 2014
+18 February 2014
+******************************************************************************/
+#include "Index.h"
+
+Index::Index()
+{
+}
+
+Index::~Index()
+{
+}
+/******************************************************************************
+
+******************************************************************************/
+void Index::processTheWords(Stoplist stoplist)
+{ 
+  map<string,Word>::iterator ron;
+  for(ron = this->theWords.begin(); 
+       ron != this->theWords.end(); ++ron)
+  {
+    if(stoplist.isInStoplist(ron->first))
+     {
+        ron->second.setAsStopWord();
+     }
+  }
+
+} // void Index::processTheWords()
+
+/******************************************************************************
+
+******************************************************************************/
+void Index::readData(Scanner& inScanner)
+{
+  
+  
+  while(inScanner.hasMoreData())
+  {
+    string mickey = inScanner.next();
+    if(mickey != ""){
+    //cout << mickey; 
+    if(theWords.find(mickey) == theWords.end()){
+      Word word(mickey);
+      theWords[mickey] = word;
+    }
+    else{
+      theWords[mickey].bumpCount();//(theWord.[mickey])-> value, ([mickey])-> key
+    }
+   }
+  }
+   
+} // void Index::readData(Scanner& inScanner)
+
+/******************************************************************************
+
+******************************************************************************/
+string Index::toString()
+{
+ stringstream sue;
+ map<string,Word>::iterator counter;
+  for(counter = this->theWords.begin(); 
+       counter != this->theWords.end(); ++counter)
+  {
+    sue << counter->second.toString() << endl;
+  }
+   //return "test";
+
+  return sue.str();
+} // string Index::toString()

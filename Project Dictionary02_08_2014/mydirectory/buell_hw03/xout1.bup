@@ -1,0 +1,43 @@
+Main: DATA 
+Words:
+     1 and         stopword
+     2 at          stopword
+     1 by          stopword
+     1 for         stopword
+     1 is          stopword
+     3 it          stopword
+     2 no          stopword
+     5 of          stopword
+     2 or          stopword
+     8 the         stopword
+     2 this        stopword
+     1 under       stopword
+     2 with        stopword
+     1 you         stopword
+     1 almost      
+     1 anyone      
+     1 anywhere    
+     1 away        
+     2 beagle      
+     1 charles     
+     1 copy        
+     1 cost        
+     1 darwin      
+     3 ebook       
+     1 give        
+     3 gutenberg   
+     1 included    
+     1 license     
+     1 may         
+     1 online      
+     1 org         
+     2 project     
+     1 re          
+     1 restrictions
+     1 terms       
+     1 title       
+     2 use         
+     2 voyage      
+     1 whatsoever  
+     1 www         
+

@@ -1,0 +1,6 @@
+Main: Beginning execution
+Main: stoplistfile:  'stoplistNLTK.txt'
+Main: infile:  'xin1.txt'
+Main: outfile: 'xout1.bup'
+Main: logfile: 'xlog1.bup'
+Main: Ending execution
